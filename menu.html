@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Menu</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+		<link rel="stylesheet" type="text/css" href="menustylesheet.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<!--Nav bar-->
+		<div class="navbar1 w3-hide-small w3-top">
+			<div class="w3-container" id="myNavbar">
+			<div class="w3-bar w3-xlarge w3-animate-left">
+				<a href="index.html" class="w3-bar-item w3-button">HOME</a>
+				<a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+				<a href="#" class="w3-bar-item w3-button">MENU</a>
+				 <a href="galleries.html" class="w3-bar-item w3-button">GALLERIES</a>
+				<a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+			</div>
+		</div>
+		</div>
+		<!-- Side bar -->
+		<div class="sidebar w3-top w3-hide-large w3-hide-medium">
+			<div class="w3-sidebar w3-bar-block w3-xlarge w3-animate-left" style="display:none" id="mySidebar">
+				<i onclick="w3_close()" class="fa fa-bars w3-invert w3-button w3-xlarge w3-black"></i>
+				<div>
+					<a href="index.html" class="w3-bar-item w3-button">HOME</a>
+					<a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+					<a href="#" class="w3-bar-item w3-button">MENU</a>
+					<a href="galleries.html" class="w3-bar-item w3-button">GALLERIES</a>
+					<a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+				</div>
+			</div>
+			<i class="fa fa-bars w3-invert w3-button w3-xlarge w3-black w3-opacity-min" onclick="w3_open()"></i>
+		</div>
+		<!-- Menu Container -->
+		<div class="bg w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+			<div class="w3-content">
+				
+				<h2 class="w3-center w3-jumbo w3-animate-top" style="margin-bottom:64px"><b>MENU</b></h2>
+				<!--Menu bar-->
+				<div class="menubar w3-row w3-center w3-border w3-border-dark-grey w3-animate-right">
+					<a href="javascript:void(0)" onclick="openMenu(event, 'Starter');" id="myLink">
+						<div class="w3-col s4 tablink w3-hover-red">Starter</div>
+					</a>
+					<a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" >
+						<div class="w3-col s4 tablink w3-hover-red">Pizza</div>
+					</a>
+					<a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+						<div class="w3-col s4 tablink w3-hover-red">Pasta</div>
+					</a>
+				</div>
+				
+				<!--Starter menu-->
+				<div class="menubg">
+				<div id="Starter" class="menu w3-container w3-padding-32 w3-animate-left">
+					<h1><span class="w3-black w3-round">Today's Soup </span><p class="w3-tag w3-grey w3-round">Seasonal</p><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+					<p><span class="w3-black w3-round">Ask the waiter</span></p>
+					<hr>
+					
+					<h1><span class="w3-black w3-round">Bruschetta</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+					<p><span class="w3-black w3-round">Bread with pesto, tomatoes, onion, garlic</span></p>
+					<hr>
+					
+					<h1><span class="w3-black w3-round">Garlic bread</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+					<p><span class="w3-black w3-round">Grilled ciabatta, garlic butter, onions</span></p>
+					<hr>
+					
+					<h1><span class="w3-black w3-round">Tomozzarella</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+					<p><span class="w3-black w3-round">Tomatoes and mozzarella</span></p>
+				</div>
+				<!--Pizza menu-->
+				<div id="Pizza" class="w3-container menu w3-padding-32 w3-animate-left">
+					<h1><span class="w3-black w3-round">Margherita</span><span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+					<p><span class="w3-black w3-round">Fresh tomatoes, fresh mozzarella, fresh basil</span></p>
+					<hr>
+					<h1><span class="w3-black w3-round">Formaggio</span><span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+					<p><span class="w3-black w3-round">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+					<hr>
+					
+					<h1><span class="w3-black w3-round">Chicken</span><span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+					<p><span class="w3-black w3-round">Fresh tomatoes, mozzarella, chicken, onions</span></p>
+					<hr>
+					<h1><span class="w3-black w3-round">Pineapple'o'clock</span><span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+					<p><span class="w3-black w3-round">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</span></p>
+					<hr>
+					<h1><span class="w3-black w3-round">Meat Town</span><p class="w3-tag w3-red w3-round">Hot!</p><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+					<p><span class="w3-black w3-round">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</span></p>
+					<hr>
+					<h1><span class="w3-black w3-round">Parma</span><p class="w3-tag w3-grey w3-round">New</p><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+					<p><span class="w3-black w3-round">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</span></p>
+				</div>
+				<!--Pasta menu-->
+				<div id="Pasta" class="w3-container menu w3-padding-32 w3-animate-left">
+					<h1><span class="w3-black w3-round">Lasagna </span> <p class="w3-tag w3-grey w3-round">Popular</p> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+					<p><span class="w3-black w3-round">Special sauce, mozzarella, parmesan, ground beef</span></p>
+					<hr>
+					
+					<h1><span class="w3-black w3-round">Ravioli</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+					<p><span class="w3-black w3-round">Ravioli filled with cheese</span></p>
+					<hr>
+					
+					<h1><span class="w3-black w3-round">Spaghetti Classica</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+					<p><span class="w3-black w3-round">Fresh tomatoes, onions, ground beef</span></p>
+					<hr>
+					
+					<h1><span class="w3-black w3-round">Seafood pasta</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+					<p><span class="w3-black w3-round">Salmon, shrimp, lobster, garlic</span></p>
+				</div><br>
+			</div>
+		</div>
+		<script>
+				//sidebar
+				function w3_open() {
+				document.getElementById("mySidebar").style.display = "block";
+				}
+				function w3_close() {
+				document.getElementById("mySidebar").style.display = "none";
+				}
+				
+				// Tabbed Menu
+				function openMenu(evt, menuName) {
+				var i, x, tablinks;
+				x = document.getElementsByClassName("menu");
+				for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablink");
+				for (i = 0; i < x.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+				}
+				document.getElementById(menuName).style.display = "block";
+				evt.currentTarget.firstElementChild.className += " w3-red";
+				}
+				document.getElementById("myLink").click();
+		</script>
+		<script>		
+				// Change style of navbar on scroll
+				window.onscroll = function() {myFunction()};
+				function myFunction() {
+				var navbar = document.getElementById("myNavbar");
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+				navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+				} else {
+				navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
+				}
+				}
+		</script>
+	</body>
+</html>

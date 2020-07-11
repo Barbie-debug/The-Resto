@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+		<link rel="stylesheet" type="text/css" href="contactstylesheet.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<!--Nav bar-->
+		<div class="navbar1 w3-hide-small w3-top">
+			<div id="myNavbar">
+				<div class="w3-bar w3-xlarge w3-animate-left">
+					<a href="index.html" class="w3-bar-item w3-button">HOME</a>
+					<a href="menu.html" class="w3-bar-item w3-button">MENU</a>
+					<a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+					<a href="galleries.html" class="w3-bar-item w3-button">GALLERIES</a>
+					<a href="#" class="w3-bar-item w3-button">CONTACT</a>
+				</div>
+			</div>
+		</div>
+		<!-- Side bar -->
+		<div class="w3-top w3-hide-large w3-hide-medium">
+			<div class="w3-sidebar w3-bar-block w3-xlarge w3-animate-left" style="display:none" id="mySidebar">
+				<i onclick="w3_close()" class="fa fa-bars w3-invert w3-button w3-xlarge w3-black w3-opacity-min"></i>
+				<div>
+					<a href="index.html" class="w3-bar-item w3-button">HOME</a>
+					<a href="menu.html" class="w3-bar-item w3-button">MENU</a>
+					<a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+					<a href="galleries.html" class="w3-bar-item w3-button">GALLERIES</a>
+					<a href="#" class="w3-bar-item w3-button">CONTACT</a>
+				</div>
+			</div>
+			<i class="fa fa-bars w3-invert w3-button w3-xlarge w3-black w3-opacity-min" onclick="w3_open()"></i>
+		</div>
+		<!-- Contact -->
+		<div class="w3-container w3-padding-64 w3-xlarge">
+			<div class="w3-content">
+				<h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+				<p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+				<!--Text box-->
+				<div class="container">
+					<form action="/action_page.php">
+						<div class="row">
+							<div class="col-25">
+								<label for="subject" class="w3-text-black">Send us message</label>
+							</div>
+							<div class="col-75">
+								<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<input class="w3-black w3-hover-gray" type="submit" value="Send">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--Location-->
+		<div class="w3-center">
+			<h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Location</h1>
+			<h3>Find us at some address at some place or call us at 05050515-122330</h3>
+		</div>
+		<div>
+			<img class="map w3-hide-small w3-hide-medium" src="image/map3.png" alt="Map">
+			<img class="map w3-hide-large" src="image/map4.png" alt="Map">
+		</div>
+		
+		<footer class="social w3-black">
+			<div class="w3-animate-right w3-center w3-padding-48 w3-xlarge">
+				<i class="fa fa-facebook-official w3-hover-opacity w3-padding"></i>
+				<i class="fa fa-instagram w3-hover-opacity w3-padding"></i>
+				<i class="fa fa-snapchat w3-hover-opacity w3-padding"></i>
+				<i class="fa fa-tripadvisor w3-hover-opacity w3-padding"></i>
+				<i class="fa fa-twitter w3-hover-opacity w3-padding"></i>
+				<i class="fa fa-linkedin w3-hover-opacity w3-padding"></i>
+			</div>
+			<div class="w3-center">
+				<div>
+					<h1>Address:</h1>
+					<p>Koh Samui, Surathani, Thailand</p>
+				</div>
+				<div >
+					<h1>Phone:</h1>
+					<p>137276452764918</p>
+					<h1>Email:</h1>
+					<p>*******@gmail.com</p>
+				</div>
+				<div>
+					<h1>Open:</h1>
+					<p>From 10am to 12pm</p>
+				</div>
+			</div>
+		</footer>
+		<script>
+		//sidebar
+				function w3_open() {
+				document.getElementById("mySidebar").style.display = "block";
+				}
+				function w3_close() {
+				document.getElementById("mySidebar").style.display = "none";
+				}
+		</script>
+		<script>
+		// Change style of navbar on scroll
+		window.onscroll = function() {myFunction()};
+		function myFunction() {
+		var navbar = document.getElementById("myNavbar");
+		if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+		navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+		} else {
+		navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
+		}
+		}
+		</script>
+	</body>
+</html>

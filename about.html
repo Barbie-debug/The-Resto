@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+        <link rel="stylesheet" type="text/css" href="aboutstylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--Nav bar-->
+        <div class="navbar1 w3-hide-small w3-top">
+            <div class="w3-container" id="myNavbar">
+            <div class="w3-bar w3-xlarge w3-animate-left">
+                <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+                <a href="#" class="w3-bar-item w3-button">ABOUT</a>
+                <a href="menu.html" class="w3-bar-item w3-button">MENU</a>
+                 <a href="galleries.html" class="w3-bar-item w3-button">GALLERIES</a>
+                <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+            </div>
+        </div>
+        </div>
+        <!-- Side bar -->
+        <div class="w3-top w3-hide-large w3-hide-medium">
+            <div class="w3-sidebar w3-bar-block w3-xlarge w3-animate-left" style="display:none" id="mySidebar">
+                <i onclick="w3_close()" class="fa fa-bars w3-invert w3-button w3-xlarge w3-black"></i>
+                <div>
+                <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+                <a href="#" class="w3-bar-item w3-button">ABOUT</a>
+                <a href="menu.html" class="w3-bar-item w3-button">MENU</a>
+                <a href="galleries.html" class="w3-bar-item w3-button">GALLERIES</a>
+                <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+            </div>
+            </div>
+            <i class="fa fa-bars w3-invert w3-button w3-xlarge w3-black w3-opacity-min" onclick="w3_open()"></i>
+        </div>
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container">
+            <div class="w3-display-middle" style="white-space:nowrap;">
+                <h1 class="w3-center w3-jumbo w3-animate-top" style="margin-bottom:64px">About</h1>
+            </div>
+        </div>
+        <!--About conrainer-->
+        <div class="w3-container w3-padding w3-xlarge">
+            <div class="w3-content">
+                <p class="w3-animate-left">The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</p>
+                <p><strong>The Chef?</strong> Mr. Italiano himself<img src="image/chef.jpeg" style="width:250px; box-shadow: 5px 5px 8px black;" class="w3-circle w3-right w3-animate-right" alt="Chef"></p>
+                <p>We are proud of our menu.</p>
+            </div>
+        </div>
+        <!-- Second Parallax Image with Portfolio Text -->
+        <div class="bgimg-2 w3-display-container">
+            <div class="w3-display-middle">
+                <h1 class="w3-center w3-jumbo w3-animate-top" style="margin-bottom:64px">OPEN HOURS</h1>
+            </div>
+        </div>
+        <!--Footer-->
+        
+        <div class="w3-row w3-padding w3-center">
+            <div class="w3-col s6">
+                <p>Mon & Tue CLOSED</p>
+                <p>Wednesday 10.00 - 24.00</p>
+                <p>Thursday 10:00 - 24:00</p>
+            </div>
+            <div class="w3-col s6">
+                <p>Friday 10:00 - 12:00</p>
+                <p>Saturday 10:00 - 23:00</p>
+                <p>Sunday Closed</p>
+            </div>
+        </div>
+        <script>
+        //sidebar
+                function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                }
+                function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                }
+        </script>
+        <script>        
+                // Change style of navbar on scroll
+                window.onscroll = function() {myFunction()};
+                function myFunction() {
+                var navbar = document.getElementById("myNavbar");
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+                } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
+                }
+                }
+        </script>
+    </body>
+</html>

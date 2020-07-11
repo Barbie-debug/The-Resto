@@ -1,0 +1,26 @@
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif !important;
+text-shadow: 2px 2px 8px black;
+}
+
+
+body{
+	background-color: #fff099;
+}
+.navbar1 {
+	background-color: hsl(0, 0%, 0%,0.4);
+	color: white;
+}
+.w3-sidebar{
+	background-color: hsl(0, 0%, 0%,0.4);
+	color: white;	
+	}
+.header{
+	margin: 70px 0 70px;
+	text-shadow: 2px 2px 8px white;
+}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+.pagecontent {
+	margin-top: 70px;
+}

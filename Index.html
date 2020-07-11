@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <title>The Resto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+  <link rel="stylesheet" type="text/css" href="indexstylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <body class="w3-black">
+    
+    <!--Nav bar-->
+    <div class="navbar1 w3-hide-small w3-top">
+      <div class="w3-container" id="myNavbar">
+        <div class="w3-bar w3-xlarge w3-animate-left">
+          <a href="#" class="w3-bar-item w3-button">HOME</a>
+          <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+          <a href="menu.html" class="w3-bar-item w3-button">MENU</a>
+          <a href="galleries.html" class="w3-bar-item w3-button">GALLERIES</a>
+          <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+        </div>
+      </div>
+    </div>
+    <!-- Side bar -->
+    <div class="w3-hide-large w3-hide-medium w3-top">
+      <div class="w3-sidebar w3-bar-block w3-xlarge w3-animate-left" style="display:none" id="mySidebar">
+        <i onclick="w3_close()" class="fa fa-bars w3-invert w3-button w3-xlarge w3-black w3-opacity-min"></i>
+        <div>
+          <a href="#" class="w3-bar-item w3-button">HOME</a>
+          <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+          <a href="menu.html" class="w3-bar-item w3-button">MENU</a>
+          <a href="galleries.html" class="w3-bar-item w3-button">GALLERIES</a>
+          <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+        </div>
+      </div>
+      <i class="fa fa-bars w3-invert w3-button w3-xlarge w3-black w3-opacity-min" onclick="w3_open()"></i>
+    </div>
+    <!-- Header with image -->
+    <header>
+      <div>
+        <div class="container">
+          <div class="outer">
+            <div class="centertext w3-display-middle w3-center w3-padding">
+              <span class="w3-text-white w3-hide-small w3-animate-top" style="font-size:100px">The<br>RESTO</span>
+              <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>The<br>RESTO</b></span>
+            </div>
+            <div class="w3-display-bottommiddle w3-center w3-padding-48 w3-xlarge">
+              <i class="fa fa-facebook-official w3-hover-opacity w3-padding"></i>
+              <i class="fa fa-instagram w3-hover-opacity w3-padding"></i>
+              <i class="fa fa-snapchat w3-hover-opacity w3-padding"></i>
+              <i class="fa fa-tripadvisor w3-hover-opacity w3-padding"></i>
+              <i class="fa fa-twitter w3-hover-opacity w3-padding"></i>
+              <i class="fa fa-linkedin w3-hover-opacity w3-padding"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Footer -->
+    <!--<footer class="social">
+      <div class="w3-animate-right w3-center w3-padding-48 w3-xlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity w3-padding"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-padding"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-padding"></i>
+        <i class="fa fa-tripadvisor w3-hover-opacity w3-padding"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-padding"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-padding"></i>
+      </div>
+      <div class="info w3-center">
+        <div>
+          <h1>Address:</h1>
+          <p>Koh Samui, Surathani, Thailand</p>
+        </div>
+        <div >
+          <h1>Phone:</h1>
+          <p>137276452764918</p>
+          <h1>Email:</h1>
+          <p>*******@gmail.com</p>
+        </div>
+        <div>
+          <h1>Open:</h1>
+          <p>From 10am to 12pm</p>
+        </div>
+      </div>
+    </footer>-->
+    <script>
+    //sidebar
+    function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    }
+    function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
+    <script>
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+    } else {
+    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
+    }
+    }
+    </script>
+  </body>
+</html>

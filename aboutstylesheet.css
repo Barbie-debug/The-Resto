@@ -1,0 +1,55 @@
+
+body, html {height: 100%}
+
+body,h1,h2,h3,h4,h5,h6, p {
+	font-family: "Amatic SC", sans-serif !important;
+	text-shadow: 2px 2px 8px black;
+}
+
+body {
+	background-color: rgb(77, 77, 77);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+h1,p {
+	color: white;
+	font-size: 25px;
+	font-weight: 500;
+	text-shadow: 5px 5px 4px black;
+}
+.navbar1 {
+	background-color: hsl(0, 0%, 0%,0.4);
+	color: white;
+}
+.w3-sidebar{
+	background-color: hsl(0, 0%, 0%,0.4);
+	color: white;	
+}
+.imagecontainer{
+	box-shadow: 5px 5px 8px black;
+}
+.mySlides {
+	width: 100%;
+}
+
+/* Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment:fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (About) */
+.bgimg-1 {
+  background-image: url('image/food1.jpg');
+  min-height: 55%;
+}
+
+/* Second image (Open hours) */
+.bgimg-2 {
+  background-image: url("image/meat.jpg");
+  min-height: 300px;
+}
